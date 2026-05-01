@@ -192,7 +192,7 @@ button,input,select,textarea{font-family:'DM Sans',sans-serif;cursor:pointer}
             <div class="field-wrap"><label class="field-label">Product or Service</label><select class="inp" id="productSel"></select></div>
             <div class="field-wrap">
               <label class="field-label">Custom item name <span style="font-size:11px;color:var(--muted);font-weight:400;text-transform:none">(optional &mdash; overrides product above)</span></label>
-              <input class="inp" id="customItemName" placeholder="e.g. Custom Ottoman, Labour charge..."/>
+              <input class="inp" id="customItemName" placeholder="e.g. Blind Roller, Labour charge..."/>
             </div>
             <div class="field-wrap">
               <label class="field-label">Pricing type</label>
@@ -273,7 +273,7 @@ button,input,select,textarea{font-family:'DM Sans',sans-serif;cursor:pointer}
         <div class="grid-2">
           <div class="card">
             <div class="card-title">Add Product or Services</div>
-            <div class="field-wrap"><label class="field-label">Product name</label><input class="inp" id="pName" placeholder="e.g. 3-Seater Sofa"/></div>
+            <div class="field-wrap"><label class="field-label">Product name</label><input class="inp" id="pName" placeholder="e.g. Blackout Roller"/></div>
             <div class="field-wrap">
               <label class="field-label">Pricing type</label>
               <div class="ptog-wrap">
@@ -433,11 +433,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function init() {
   if (products.length === 0) {
     products = [
-      {name:'3-Seater Sofa',price:8500,type:'fixed',category:'Sofas'},
-      {name:'Queen Bed Frame',price:5200,type:'fixed',category:'Beds'},
-      {name:'Dining Table',price:6800,type:'fixed',category:'Tables'},
-      {name:'Custom Carpet',price:450,type:'dim',category:'Flooring'},
-      {name:'Custom Curtain Fabric',price:320,type:'dim',category:'Soft Furnishings'}
+      {name:'Venetian Blind',price:300,type:'fixed',category:'Blinds'},
+      {name:'Blackout Roller',price:800,type:'fixed',category:'Blinds'},
+      {name:'Roller Blind',price:500,type:'fixed',category:'Blinds'},
+      {name:'Custom Carpet',price:450,type:'dim',category:'Carpet'},
+      {name:'Custom Curtain Fabric',price:320,type:'dim',category:'Carpet'}
     ];
     saveProducts();
   }
